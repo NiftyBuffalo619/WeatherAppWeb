@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
   </head>
-  <body>
+  <body class="blurred">
     <header class="header">
          <div class="header-left">
           <img class="weather-icon large" src="./public/icons/sun.svg" data-current-icon/>
           <div class="header-current-temp">
-            <span data-current-temp>31</span>&deg;</div>
+            <span data-current-temp>31</span>&deg;C</div>
          </div>
          <div class="header-right">
             <div class="info-group">
@@ -23,7 +23,7 @@
             </div>
             <div class="info-group">
               <div class="label">Wind</div>
-              <div><span data-current-wind>32</span><span class="value-sub-info">mph</span></div>
+              <div><span data-current-wind>32</span><span class="value-sub-info">km/h</span></div>
             </div>
             <div class="info-group">
               <div class="label">Low</div>
@@ -35,7 +35,7 @@
             </div>
             <div class="info-group">
               <div class="label">Precip</div>
-              <div><span data-current-precip>0.1</span><span class="value-sub-info">in</span></div>
+              <div><span data-current-precip>0.1</span><span class="value-sub-info">mm</span></div>
             </div>
          </div>
          
@@ -127,7 +127,7 @@
       <div class="day-card">
         <img data-icon class="weather-icon" />
         <div class="day-card-day" date-date></div>
-        <div><span data-temp></span><span>&deg;</span></div>
+        <div><span data-temp></span><span>&deg;C</span></div>
       </div>
     </template>
 

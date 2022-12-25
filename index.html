@@ -10,8 +10,7 @@
          <div class="header-left">
           <img class="weather-icon large" src="./public/icons/sun.svg" data-current-icon/>
           <div class="header-current-temp">
-            <span data-current-temp>31</span>&deg;
-          </div>
+            <span data-current-temp>31</span>&deg;</div>
          </div>
          <div class="header-right">
             <div class="info-group">
@@ -119,18 +118,60 @@
                 <div>0<span class="value-sub-info">in</span></div>
               </div>
             </td>
-            <td></td>
           </tr>
-         </tbody>
+          </tbody>
      </table>
 
 
-    <template>
+    <template id="day-card-template">
       <div class="day-card">
-        <img src="./public/icons/cloud-bolt.svg" class="weather-icon"/>
-        <div class="day-card-day">Monday</div>
-        <div>32&deg;</div>
+        <img data-icon class="weather-icon" />
+        <div class="day-card-day" date-date></div>
+        <div><span data-temp></span><span>&deg;</span></div>
       </div>
+    </template>
+
+
+    <template id="hour-row-template">
+      <tr class="hour-row">
+        <tr class="hour-row">
+          <td>
+            <div class="info-group">
+              <div class="label" data-day></div>
+              <div data-time></div>
+            </div>
+          </td>
+          <td>
+            <div class="info-group">
+              <img data-icon class="weather-icon">
+            </div>
+          </td>
+          <td>
+            <div class="info-group">
+              <div class="label">Temp</div>
+              <div><span data-temp></span><span>&deg;</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="info-group">
+              <div class="label">FL Temp</div>
+              <div><span data-fl-temp></span><span>&deg;</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="info-group">
+              <div class="label">Wind</div>
+              <div><span data-wind></span><span>km/h</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="info-group">
+              <div class="label">Percip</div>
+              <div><span data-precip></span><span>mm</span></div>
+            </div>
+          </td>
+        </tr>
+      </tr>
     </template>
     <script type="module" src="./main.js"></script>
   </body>
